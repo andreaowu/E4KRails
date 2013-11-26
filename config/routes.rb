@@ -1,12 +1,12 @@
 E4KWebsite::Application.routes.draw do
     root :to => 'static_pages#page'
 
-    match '/about', :to => 'static_pages#about'
-    match '/registration', :to => 'static_pages#registration'
-    match '/activities', :to => 'static_pages#activities'
-    match '/gallery', :to => 'static_pages#gallery'
-    match '/FAQ', :to => 'static_pages#FAQ'
-    match '/contact', :to => 'static_pages#contact'
+    get '/about', :to => 'static_pages#about'
+    get '/registration', :to => 'static_pages#registration'
+    get '/activities', :to => 'static_pages#activities'
+    get '/gallery', :to => 'static_pages#gallery'
+    get '/FAQ', :to => 'static_pages#FAQ'
+    get '/contact', :to => 'static_pages#contact'
        
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
